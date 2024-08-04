@@ -1,0 +1,440 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #0a2640;
+}
+
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  margin: auto;
+  top: 46px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-family: Manrope;
+  line-height: 33.64px;
+  gap: 5px;
+}
+
+.logo h1 {
+  font-family: Manrope;
+  font-size: 43.25px;
+  font-weight: 700;
+}
+
+.logo img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 43.25px;
+}
+
+.menu-bar ul {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  gap: 40px;
+  color: #fff;
+  font-family: Open sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.temp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  margin: auto;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.boldo h1,
+p {
+  font-family: Manrope;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 72px;
+  color: #fff;
+}
+
+.boldo p {
+  font-family: Open Sans;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.buton {
+  gap: 24px;
+  display: flex;
+}
+
+.buton .but1 button {
+  padding: 16px 56px 16px 56px;
+  gap: 8px;
+  border-radius: 56px;
+  border: 2px 0px 0px 0px;
+  opacity: 0px;
+  background-color: #65e4a3;
+  border: none;
+}
+
+.buton .but2 button {
+  padding: 16px 56px 16px 56px;
+  gap: 8px;
+  border-radius: 56px;
+  opacity: 0px;
+  border: 2px solid #ffffff;
+  background-color: #0a2640;
+  color: #fff;
+}
+
+/****************** logo list **************** */
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: #0a2640;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #0a2640);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #0a2640);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: running;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 20s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 50px;
+  margin: 0 40px;
+}
+
+/****************** Header finish  **************/
+
+.service {
+  width: 100%;
+}
+
+.lower {
+  width: 1200px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.lower h5 {
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #777777;
+  text-align: center;
+}
+
+.lower h1 {
+  font-family: Manrope;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 72px;
+  text-align: center;
+  color: #000000;
+}
+
+.cally {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cool-fe {
+  width: 300px;
+}
+
+.cool-fe img {
+  width: 300px;
+  height: 354px;
+  border-radius: 24px 0px 0px 0px;
+}
+
+.cool-fe h1 {
+  font-family: Open Sans;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+  color: #000000;
+}
+
+.cool-fe p {
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #777777;
+}
+
+.explore {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.explore h1 {
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #000000;
+}
+.explore img {
+  width: 24px;
+  height: 26px;
+}
+
+/* *********************** *************/
+
+.custom {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 80px;
+}
+
+.ser {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.trade img {
+  width: 494px;
+  height: 610px;
+}
+
+.connect {
+  gap: 40px;
+}
+.connect h1 {
+  font-family: Manrope;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 56px;
+}
+
+.connect ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hh {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 10px 0px;
+}
+.hh img {
+  width: 36px;
+  height: 36px;
+}
+
+.but3 {
+  margin-top: 20px;
+}
+.but3 button {
+  padding: 16px 56px 16px 56px;
+  border-radius: 56px;
+  background-color: #0a2640;
+  color: #fff;
+}
+
+.tt {
+  margin-top: 30px;
+}
+
+/* ****************************************** */
+
+.frd {
+  margin-top: 100px;
+  width: 100%;
+}
+
+.first,
+.we {
+  width: 1100px;
+  margin: auto;
+}
+
+.first img {
+  height: 403px;
+  border-radius: 24px 0px 0px 0px;
+  opacity: 0px;
+}
+
+.we {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.we h1 {
+  font-family: Manrope;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 56px;
+  width: 420px;
+}
+
+.down h1 {
+  font-family: Open sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #000000;
+}
+
+.down1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.form{
+  width: 1200px;
+  background-color: #0A2640;
+  height: 391px;
+  margin: auto;
+  margin-top: 100px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 70px 0 0 0;
+}
+
+.form h1{
+  color: #fff;
+font-family: Manrope;
+font-size: 48px;
+font-weight: 400;
+line-height: 72px;
+
+}
+
+.hf{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+.hf .gy{
+height: 56px;
+border-radius: 240px;
+border: 2px 0px 0px 0px;
+width: 300px;
+
+}
+
+.hf button{
+  height: 56px;
+border-radius: 240px;
+border: 2px 0px 0px 0px;
+background-color: #65e4a3;
+width: 170px;
+}
+/* ********************************* */
+
+.footer{
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 90px;
+  margin-top: 120px;
+  align-items: center;
+}
+
+.disk  {
+  display: flex;
+  align-items: center;
+}
+
+.disk h1{
+  color: #0A2640;
+  font-family: Manrope;
+  font-size: 43.25px;
+  font-weight: 700;
+  line-height: 33.64px;
+
+}
+
+.disk img{
+  width: 24.92px;
+height: 32.37px;
+}
+
+.bol p{
+font-family: Open Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+color: #777777;
+width: 400px;
+
+}
+
+.load h1{
+  font-family: Open sans-serif ;
+font-size: 20px;
+font-weight: 700;
+line-height: 32px;
+color: #000000;
+
+}
+
+.load p{
+  font-family: Open Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+color: #777777;
+}
